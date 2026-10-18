@@ -1,0 +1,177 @@
+MODULE DATA NEEDS (162 unimplemented PvP catalogue entries)
+Classified from names, descriptions and scope notes. Not tested.
+
+=== Build now: input/device only (17) ===
+- combat_combo_counter | Combo Counter | COMBAT | Counts your own attacks, not the game's server-side combo value.
+- combat_no_sprint_reset | No Sprint Reset | COMBAT | CLIENT_HELPER
+- move_sprint_swing | Sprint While Swinging | MOVEMENT | CLIENT_HELPER
+- util_auto_gg | Auto GG | UTILITY | Sends a message; the server's chat rules still apply.
+- util_auto_reconnect | Auto Reconnect | UTILITY | CLIENT_HELPER
+- util_auto_tip | Auto Tip | UTILITY | Sends a message; the server's chat rules still apply.
+- util_chat_macro | Chat Macro | UTILITY | Sends a message you wrote; the server's chat rules still apply.
+- util_command_bind | Command Bind | UTILITY | Runs a command you wrote; the server's rules still apply.
+- util_drop_all | Drop All | UTILITY | Sends the same drop input a player would.
+- util_keep_sprint | Keep Sprint | UTILITY | CLIENT_HELPER
+- util_quick_disconnect | Quick Disconnect | UTILITY | CLIENT_HELPER
+- util_screenshot | Quick Screenshot | UTILITY | LOCAL_OVERLAY
+- hud_clock | Clock | VISUAL | LOCAL_OVERLAY
+- hud_combo_display | Combo Display | VISUAL | Counts your own attacks, not the server's combo value.
+- hud_keystrokes | Keystrokes | VISUAL | LOCAL_OVERLAY
+- hud_memory | Memory Usage | VISUAL | LOCAL_OVERLAY
+- hud_watermark | Watermark | VISUAL | LOCAL_OVERLAY
+
+=== Build now: game options file (6) ===
+- move_bob_off | View Bobbing Off | MOVEMENT | LOCAL_OVERLAY
+- move_no_sprint_particle | No Sprint Particle | MOVEMENT | LOCAL_OVERLAY
+- move_sprint_particles | Sprint Particles Off | MOVEMENT | LOCAL_OVERLAY
+- util_fullbright | Fullbright | UTILITY | A brightness option, not a light-source change.
+- world_fullbright | Fullbright Multiplier | WORLD | A brightness option, not a light-source change.
+- world_particle_off | Particle Suppressor | WORLD | LOCAL_OVERLAY
+
+=== Local position/rotation feed (exists, offsets unverified) (11) ===
+- combat_reach_circle | Reach Circle | COMBAT | LOCAL_OVERLAY
+- move_fall_damage_warn | Fall Damage Warning | MOVEMENT | CLIENT_HELPER
+- move_position_display | Position Display | MOVEMENT | LOCAL_OVERLAY
+- move_speed_display | Speed Display | MOVEMENT | LOCAL_OVERLAY
+- move_velocity_display | Velocity Display | MOVEMENT | LOCAL_OVERLAY
+- hud_chunk_borders | Chunk Borders | VISUAL | LOCAL_OVERLAY
+- hud_compass | Compass | VISUAL | LOCAL_OVERLAY
+- hud_coordinates | Coordinates | VISUAL | Needs the local-player feed; shows nothing without it.
+- hud_direction | Direction | VISUAL | LOCAL_OVERLAY
+- hud_speedometer | Speedometer | VISUAL | LOCAL_OVERLAY
+- world_waypoints | Waypoints | WORLD | Needs the local-player feed for your position.
+
+=== Needs game state (health, inventory, entities, world) or unclear - review (75) ===
+- combat_attack_cooldown | Attack Cooldown | COMBAT | LOCAL_OVERLAY
+- combat_attack_indicator | Attack Indicator | COMBAT | CLIENT_HELPER
+- combat_attack_range_sync | Attack Range Synchronizer | COMBAT | CLIENT_HELPER
+- combat_backtrack | Backtrack | COMBAT | CLIENT_HELPER
+- combat_crit_timer | Crit Timer | COMBAT | LOCAL_OVERLAY
+- combat_damage_tint | Damage Tint | COMBAT | LOCAL_OVERLAY
+- combat_death_counter | Death Counter | COMBAT | CLIENT_HELPER
+- combat_gapple_timer | Gapple Timer | COMBAT | LOCAL_OVERLAY
+- combat_hit_marker | Hit Marker | COMBAT | LOCAL_OVERLAY
+- combat_kdr_tracker | K/D Tracker | COMBAT | CLIENT_HELPER
+- combat_kill_counter | Kill Counter | COMBAT | Credit is inferred from a hit then a death; never a server-confirmed kill.
+- combat_opponent_armor | Opponent Armor HUD | COMBAT | Needs the native entity feed; shows nothing without it.
+- combat_opponent_held | Opponent Held Item | COMBAT | Needs the native entity feed.
+- combat_pearl_timer | Pearl Cooldown | COMBAT | LOCAL_OVERLAY
+- combat_potion_timer | Potion Timer | COMBAT | Needs the effect feed from the game.
+- combat_rotation_smoother | Rotation Smoother | COMBAT | CLIENT_HELPER
+- combat_s_tap | S-Tap Assist | COMBAT | CLIENT_HELPER
+- combat_shield_timer | Shield Timer | COMBAT | LOCAL_OVERLAY
+- combat_streak_tracker | Killstreak Tracker | COMBAT | CLIENT_HELPER
+- combat_swing_adjuster | Packet-Timed Swing Adjuster | COMBAT | CLIENT_HELPER
+- combat_target_hud | Target HUD | COMBAT | Needs the entity feed for the target's health.
+- combat_totem_alert | Totem Alert | COMBAT | Needs the effect feed from the game.
+- combat_velocity_modifier | Velocity Modifier | COMBAT | CLIENT_HELPER
+- move_air_strafe | Air Strafe | MOVEMENT | CLIENT_HELPER
+- move_boat_assist | Boat Assist | MOVEMENT | CLIENT_HELPER
+- move_crouch_speed | Crouch Speed | MOVEMENT | CLIENT_HELPER
+- move_dolphin_assist | Dolphin Assist | MOVEMENT | CLIENT_HELPER
+- move_elytra_assist | Elytra Assist | MOVEMENT | CLIENT_HELPER
+- move_firework_assist | Firework Assist | MOVEMENT | CLIENT_HELPER
+- move_fov_boost | FOV Boost While Sprinting | MOVEMENT | LOCAL_OVERLAY
+- move_friction_handler | Custom Friction Handler | MOVEMENT | CLIENT_HELPER
+- move_horse_assist | Horse Assist | MOVEMENT | CLIENT_HELPER
+- move_ice_speed | Ice Speed Control | MOVEMENT | CLIENT_HELPER
+- move_jump_cooldown | Jump Cooldown | MOVEMENT | CLIENT_HELPER
+- move_ladder_assist | Ladder Assist | MOVEMENT | CLIENT_HELPER
+- move_no_slow | No Slowdown | MOVEMENT | CLIENT_HELPER
+- move_no_soul_sand | No Soul-Sand Slow | MOVEMENT | CLIENT_HELPER
+- move_no_web_slow | No Web Slowdown | MOVEMENT | CLIENT_HELPER
+- move_riptide_assist | Riptide Assist | MOVEMENT | CLIENT_HELPER
+- move_speed_bridge | Speed Bridge | MOVEMENT | CLIENT_HELPER
+- move_step_assist | Step Assist | MOVEMENT | CLIENT_HELPER
+- move_strafe_maintain | Strafe Velocity Maintainer | MOVEMENT | CLIENT_HELPER
+- move_swim_assist | Swim Assist | MOVEMENT | CLIENT_HELPER
+- util_auto_respawn | Auto Respawn | UTILITY | CLIENT_HELPER
+- util_projectile_scaler | Projectile Scaler | UTILITY | Needs the entity feed to find the projectile.
+- util_third_person_nametag | Third-Person Nametag | UTILITY | Needs the native entity feed.
+- hud_armor_percent | Armor Percentage | VISUAL | Needs the native armour feed.
+- hud_biome | Biome | VISUAL | Needs a world read the launcher does not have.
+- hud_durability_warn | Durability Warning | VISUAL | Needs an inventory read the launcher does not have.
+- hud_entity_count | Entity Count | VISUAL | Needs the native entity feed.
+- hud_health_display | Health Display | VISUAL | LOCAL_OVERLAY
+- hud_hunger_display | Hunger Display | VISUAL | LOCAL_OVERLAY
+- hud_item_counter | Item Counter | VISUAL | Needs an inventory read the launcher does not have.
+- hud_light_level | Light Level | VISUAL | Needs a world read the launcher does not have.
+- hud_packet_count | Packet Count | VISUAL | The launcher has no packet-level source in this build.
+- hud_ping_bar | Ping Bar | VISUAL | The launcher has no ping source in this build.
+- hud_ping_graph | Ping Graph | VISUAL | The launcher has no ping source in this build.
+- hud_potion_status | Potion Status | VISUAL | Needs the effect feed from the game.
+- hud_saturation | Saturation | VISUAL | LOCAL_OVERLAY
+- hud_server_ip | Server Address | VISUAL | Needs a session read the launcher does not have.
+- hud_target_info | Target Info | VISUAL | Needs the native entity feed.
+- hud_xp_display | XP Display | VISUAL | LOCAL_OVERLAY
+- world_cave_finder | Cave Finder | WORLD | Needs the native block feed.
+- world_chest_esp | Chest ESP | WORLD | Needs the native entity feed.
+- world_chunk_esp | Chunk ESP | WORLD | Needs the chunk feed.
+- world_death_waypoint | Death Waypoint | WORLD | Needs the local-player feed for your position.
+- world_dungeon_finder | Dungeon Finder | WORLD | Needs the native block feed.
+- world_item_esp | Item ESP | WORLD | Needs the native entity feed.
+- world_light_overlay | Light Overlay | WORLD | Needs the native block feed.
+- world_mob_esp | Mob ESP | WORLD | Needs the native entity feed.
+- world_ore_esp | Ore ESP | WORLD | Needs the native block feed.
+- world_player_esp | Player ESP | WORLD | Needs the native entity feed.
+- world_slime_chunk | Slime Chunk Finder | WORLD | Needs the world seed and the chunk feed.
+- world_spawner_finder | Spawner Finder | WORLD | Needs the native block feed.
+- world_tracer | Entity Tracer | WORLD | Needs the native entity feed; peer tracers need the voice feed.
+
+=== Needs engine/render hook (20) ===
+- combat_no_hurt_cam | No Hurt Camera | COMBAT | LOCAL_OVERLAY
+- move_ground_lock | Ground Lock | MOVEMENT | LOCAL_OVERLAY
+- move_stair_snap | Stair Snap | MOVEMENT | LOCAL_OVERLAY
+- util_armor_bending | Armor View Bending | UTILITY | LOCAL_OVERLAY
+- util_block_outline | Block Outline | UTILITY | Needs the block-target read from the game.
+- util_freecam | Freecam | UTILITY | Needs a camera read the launcher does not have.
+- util_low_fire | Low Fire | UTILITY | LOCAL_OVERLAY
+- util_motion_blur | Motion Blur | UTILITY | LOCAL_OVERLAY
+- util_saturation | Saturation Boost | UTILITY | LOCAL_OVERLAY
+- util_time_changer | Time Changer | UTILITY | Client-side only; the server's time is unchanged.
+- util_tnt | TNT Outline | UTILITY | Needs the block-target read from the game.
+- world_ambience | Custom Ambience | WORLD | LOCAL_OVERLAY
+- world_clear_lava | Clear Lava | WORLD | LOCAL_OVERLAY
+- world_clear_water | Clear Water | WORLD | LOCAL_OVERLAY
+- world_no_blindness | No Blindness | WORLD | LOCAL_OVERLAY
+- world_no_fog | No Fog | WORLD | LOCAL_OVERLAY
+- world_no_nausea | No Nausea | WORLD | LOCAL_OVERLAY
+- world_no_void_fog | No Void Fog | WORLD | LOCAL_OVERLAY
+- world_time_lock | Time Lock | WORLD | Client-side only; the server's time is unchanged.
+- world_weather_off | Weather Suppressor | WORLD | LOCAL_OVERLAY
+
+=== Server decides / ban risk - skip (33) ===
+- combat_aim_assist | Aim Assist | COMBAT | A client that moves your aim for you is what servers restrict or ban.
+- combat_anti_kb | Anti-Knockback | COMBAT | Knockback is applied by the server; a client cannot remove it.
+- combat_auto_block | Auto Block | COMBAT | A client that blocks for the player is what servers restrict or ban.
+- combat_click_delay | Click Delay Randomiser | COMBAT | A client that adds timing noise is what servers restrict or ban.
+- combat_crit_every_hit | Crit Every Hit | COMBAT | Crits are a server-side rule; a client cannot force one.
+- combat_lag_range | Lag Range | COMBAT | The server arbitrates reach; this cannot change what it accepts.
+- combat_reach_extend | Reach Extend | COMBAT | The server validates reach, so this cannot work and is not shipped.
+- combat_swing_through | Swing Through | COMBAT | An autoclicker-like repeat; may be against server rules.
+- combat_w_tap | W-Tap Assist | COMBAT | Sends the same input a player would; the server still arbitrates.
+- combat_weapon_switch | Auto Weapon Switch | COMBAT | Automating inventory actions is what servers restrict or ban.
+- move_auto_jump | Auto Jump | MOVEMENT | Automating movement is what servers restrict or ban.
+- move_bhop | Bunny Hop | MOVEMENT | Movement physics are server-side; a client cannot change them.
+- move_fluid_bypass | Fluid Movement Bypass | MOVEMENT | Fluid physics are server-side; a client cannot bypass them.
+- move_jump_stability | Jump-Height Stability | MOVEMENT | Jump physics are server-side; a client cannot change them.
+- move_ninja_bridge | Ninja Bridge | MOVEMENT | Automating placement is what servers restrict or ban.
+- move_no_fall | No Fall Damage | MOVEMENT | Fall damage is server-side; a client cannot negate it.
+- move_safe_walk | Safe Walk | MOVEMENT | Automating movement is what servers restrict or ban.
+- move_scaffold | Scaffold | MOVEMENT | Automating placement is what servers restrict or ban.
+- move_timer | Timer | MOVEMENT | The server enforces its own tick rate; a client cannot exceed it.
+- util_auto_armor | Auto Armor | UTILITY | Automating inventory actions is what servers restrict or ban.
+- util_auto_eat | Auto Eat | UTILITY | Automating item use is what servers restrict or ban.
+- util_auto_pot | Auto Pot | UTILITY | Automating item use is what servers restrict or ban.
+- util_auto_shield | Auto Shield | UTILITY | A client that acts for the player is what servers restrict or ban.
+- util_auto_soup | Auto Soup | UTILITY | Automating item use is what servers restrict or ban.
+- util_auto_tool | Auto Tool Switch | UTILITY | Automating inventory actions is what servers restrict or ban.
+- util_auto_totem | Auto Totem | UTILITY | Automating inventory actions is what servers restrict or ban.
+- util_chest_stealer | Chest Stealer | UTILITY | Automating inventory actions is what servers restrict or ban.
+- util_fast_place | Fast Place | UTILITY | The server enforces its own placement rate.
+- util_inv_manager | Inventory Manager | UTILITY | Automating inventory actions is what servers restrict or ban.
+- util_inventory_sort | Inventory Sorter | UTILITY | Automating inventory actions is what servers restrict or ban.
+- hud_tps | Server TPS | VISUAL | The launcher cannot measure the server's tick rate.
+- world_seed_cracker | Seed Cracker | WORLD | The launcher cannot read the world seed.
+- world_xray | X-Ray | WORLD | A client that alters world rendering is what servers restrict or ban.
+
